@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Navbar</title>
+    <style>
+      body {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        background-color: #f0ebf4;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+
+      .navbar-wrapper {
+        font-size: 20px;
+        padding: 20px;
+        margin-left: 25px;
+      }
+      .navbar-wrapper a {
+        text-decoration: none;
+        color: #e64398;
+        font-family: Arial;
+        font-weight: 600;
+      }
+
+      li {
+        color: #e64398;
+        list-style: none;
+        font-family: arial;
+      }
+      .active {
+        background: #b39bc8;
+      }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 30%;
+        margin-left: auto;
+      }
+
+      ul li {
+        padding: 20px;
+      }
+
+      li:hover {
+        cursor: pointer;
+        text-decoration: underline #b39bc8;
+      }
+
+      h4 {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 100;
+        margin: 0;
+      }
+
+      .post {
+        display: grid;
+        max-width: 1000px;
+        margin: 50px auto;
+        grid-gap: 20px 20px;
+        grid-template-columns: 5fr 5fr 5fr 5fr;
+      }
+
+      .item {
+        font-size: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        grid-column: span 2;
+      }
+
+      .item1 {
+        grid-column: 1 / span 2;
+      }
+
+      .item2 {
+        grid-column: 1 / span 3;
+      }
+
+      .item3 {
+        grid-column: 3/-1;
+      }
+
+      .item4 {
+        grid-column: 3/-1;
+      }
+
+      .item5 {
+        grid-column: 1 / span 2;
+      }
+
+      .item6 {
+        grid-column: 1 / span 2;
+      }
+      .image1 {
+        grid-row: 3 / span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-wrapper">
+        <a href="">United Breast Cancer Research Foundation</a>
+      </div>
+      <ul>
+        <li class="active"><a href=""></a>Home</li>
+        <li><a href=""></a>About</li>
+        <li><a href=""></a>Blog</li>
+        <li><a href=""></a>Contact</li>
+      </ul>
+    </nav>
+
+    <div class="post">
+      <div class="item item1"><h4>Donate Clothing and Household Goods</h4></div>
+
+      <div class="item item2">
+        Donate your new or gently used clothing, shoes, and small household
+        items to United Breast Cancer Research Foundation to help fight breast
+        cancer. Your donations are given to local thrift stores, and the
+        proceeds are used to support breast cancer research.
+      </div>
+      <div class="item image1">
+        <img src="images/breast-cancer-awareness.jpg" alt="" />
+      </div>
+      <div class="item item3">
+        <h4>Your Donation Is Tax-Deductible</h4>
+      </div>
+      <div class="item item4">
+        Then your donation is picked up or dropped off at one of our community
+        donation centers you will receive a donation receipt. Any single item
+        that's valued over $500 must be accompanied by a certified appraisal to
+        be claimed on your tax return. (For more information on valuing and
+        claiming donations, please visit irs.gov. United Breast Cancer Research
+        Foundation does not offer any appraisal services.
+      </div>
+
+      <div class="item item5">
+        <h4>Schedule a Donation Pickup</h4>
+      </div>
+      <div class="item item6">
+        Do you live in the Central Valley, Sacramento area or the San Francisco
+        Bay area? You can schedule a pickup of your donated items. We visit most
+        communities in the area at least once every four to six weeks. To find
+        out when we'll be in your neighborhood next, use our convenient online
+        scheduling form or call 1-800-788-6444.
+      </div>
+
+      <div class="item image2">
+        <img src="images/women.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
